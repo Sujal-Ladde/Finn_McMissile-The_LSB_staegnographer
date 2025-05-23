@@ -1,10 +1,10 @@
 
 
 ![Finn McMissile](https://github.com/Sujal-Ladde/Finn_McMissile-The_LSB_staegnographer/blob/main/Assets/Finn_Mcmissile.png)
-## Finn McMissile:
+### Finn McMissile:
 "I never properly introduced myself. Finn McMissile, British Intelligence."
 
-## Mater:
+### Mater:
 "Tow Mater, average intelligence."
 
 
