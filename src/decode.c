@@ -152,14 +152,15 @@ Status open_dest_file(EncodeInfo *encInfo, char *name)
 int secret_data_size(EncodeInfo *encInfo)
 {
     char str[8]; // Unused variable
-    int x = 0;
-    if (decode_data_from_image(4, encInfo->fptr_stego_image, &x) == e_failure) // Decode 4 byte for the secret data size
+    char x[4];
+    if (decode_data_from_image(4, encInfo->fptr_stego_image, x) == e_failure) // Decode 4 byte for the secret data size
     {
         fprintf(stderr, "ERROR : unable to extract the size of the secret data!\n");
         return 0;
     }
     fprintf(stdout, "LOG: extracted the size of the secret data\n");
-    return (int)x; // Return the decoded secret data size as an integer
+    uint k=str_to_int(x);
+    return k; // Return the decoded secret data size as an integer
 }
 
 /*

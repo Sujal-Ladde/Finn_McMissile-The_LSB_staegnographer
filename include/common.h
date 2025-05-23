@@ -40,6 +40,7 @@ typedef struct _EncodeInfo
 } EncodeInfo;
 void get_current_time_string_ms(char *buffer, size_t buffer_size);
 void clear_screen_c();
-char *convert_size(uint num);
+char *int_to_str(uint num);
+uint str_to_int(char* data);
 
 #endif

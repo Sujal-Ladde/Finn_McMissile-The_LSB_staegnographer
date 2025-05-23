@@ -8,7 +8,7 @@ void clear_screen_c() {
 }
 
 
-char *convert_size(uint num)
+char *int_to_str(uint num)
 {
     unsigned char *bytes = (uint8_t *)malloc(4 * sizeof(char));
     bytes[3] = (num >> 24) & 0xFF;
@@ -17,4 +17,8 @@ char *convert_size(uint num)
     bytes[0] = num & 0xFF;
 
     return bytes;
+}
+uint str_to_int(char* data)
+{
+ return (data[3] << 24) | (data[2] << 16) | (data[1] << 8) | data[0];
 }

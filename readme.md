@@ -74,12 +74,12 @@ make clean
 * `<SECRET_FILE>`
   File to embed (any type).
 * `[OUTPUT_STEGO_IMAGE.bmp]` (optional)
-  Name of the generated stego image. Defaults to `data/encode_output/stego.bmp`.
+  Name of the generated stego image. Defaults to `stego.bmp`.
 
 **Example**
 
 ```bash
-./a.out -e data/encode_input/lena.bmp secret.txt data/encode_output/lena_stego.bmp
+./a.out -e lena.bmp secret.txt lena_stego.bmp
 ```
 
 ### Decoding
@@ -91,12 +91,12 @@ make clean
 * `<STEGO_IMAGE.bmp>`
   BMP containing hidden data.
 * `[OUTPUT_BASE_NAME]` (optional)
-  Base name for the recovered file; original extension is appended. Defaults to `data/decode_output/secret`.
+  Base name for the recovered file; original extension is appended. Defaults to `secret`.
 
 **Example**
 
 ```bash
-./a.out -d data/decode_input/lena_stego.bmp recovered
+./a.out -d lena_stego.bmp recovered
 # Prompts for magic password, then writes `recovered.txt`
 ```
 

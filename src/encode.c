@@ -207,7 +207,7 @@ Status encode_secret_file_extn(char *file_extn, EncodeInfo *encInfo)
 Status encode_secret_file_size(long file_size, EncodeInfo *encInfo)
 {
 	uint c = file_size;		
-	char *str=convert_size(c);
+	char *str=int_to_str(c);
 	
 	if (encode_data_to_image(str, 4, encInfo->fptr_src_image, encInfo->fptr_stego_image) == e_failure) // Encode the size of the secret file (1 byte - potential issue for large files)
 	{
