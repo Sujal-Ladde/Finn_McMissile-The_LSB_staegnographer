@@ -25,7 +25,7 @@ steganography_module = Extension(
     sources=sources,
     include_dirs=[
         pybind11.get_include(),
-        'cpp_backend/include' # Path to your header files
+        'streamlit/cpp_backend/include' # Path to your header files
     ],
     language='c++',
     extra_compile_args=cpp_args,
