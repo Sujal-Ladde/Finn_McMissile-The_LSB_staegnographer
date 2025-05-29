@@ -171,14 +171,10 @@ make clean
 
 ---
 
-## License
-
-This project is open‑source under the **MIT License**. See [LICENSE](LICENSE) for details.
-
----
-
 ## Author
 
 **Sujal Ladde** • [laddesujal273@gmail.com](mailto:laddesujal273@gmail.com)
 
 Happy hiding! 🚀
+
+
