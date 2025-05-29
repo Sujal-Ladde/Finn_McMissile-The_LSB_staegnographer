@@ -1,0 +1,6 @@
+streamlit
+pybind11
+.
+# Add numpy, pillow, and any other direct dependencies here
+numpy
+Pillow
