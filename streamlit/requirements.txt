@@ -1,0 +1,16 @@
+# Core application framework
+streamlit
+
+# Build-time dependency for the C++ extension (used in setup.py)
+pybind11
+
+# Instructs pip to install the local package defined in setup.py
+# (this will build your steganography_engine C++ extension)
+.
+
+# --- Optional Libraries ---
+# Add these if your project specifically uses them.
+# For numerical operations, often used with image data:
+# numpy
+# For image loading, manipulation, and saving:
+# Pillow
