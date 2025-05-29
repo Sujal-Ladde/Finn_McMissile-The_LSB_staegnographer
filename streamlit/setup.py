@@ -14,10 +14,10 @@ else:
 
 # All source files for the extension
 sources = [
-    'cpp_backend/bindings.cpp',
-    'cpp_backend/src/common.cpp',
-    'cpp_backend/src/encode.cpp',
-    'cpp_backend/src/decode.cpp'
+    'streamlit/cpp_backend/bindings.cpp',
+    'streamlit/cpp_backend/src/common.cpp',
+    'streamlit/cpp_backend/src/encode.cpp',
+    'streamlit/cpp_backend/src/decode.cpp'
 ]
 
 steganography_module = Extension(
