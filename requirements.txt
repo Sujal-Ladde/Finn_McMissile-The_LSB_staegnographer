@@ -1,6 +1,5 @@
 streamlit
-pybind11
-.
-# Add numpy, pillow, and any other direct dependencies here
-numpy
-Pillow
+pybind11 # Essential: needed to run setup.py
+numpy    # If you use it
+Pillow   # If you use it
+.        # Essential: to build your local C++ extension
