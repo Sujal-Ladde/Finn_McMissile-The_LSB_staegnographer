@@ -287,8 +287,5 @@ Status do_encoding(EncodeInfo *encInfo, const char *magic_string_arg) {
         return e_failure;
     }
     fprintf(stdout, "Encoded successfully");
-    fclose(encInfo->fptr_src_image);
-    fclose(encInfo->fptr_stego_image);
-    fclose(encInfo->fptr_secret);
     return e_success;
 }
