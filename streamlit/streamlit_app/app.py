@@ -5,7 +5,7 @@ import time
 
 # Use wide layout for full-width columns
 st.set_page_config(page_title=" Finn Mcmissile- LSB Image stegonographer ", layout="wide")
-st.subheader("The devil is in the details")
+
 # Inject CSS
 st.markdown("""
 <style>
@@ -63,7 +63,8 @@ def get_unique_filename(directory, base_filename):
 
 
 # Page Title
-st.title("🖼️ LSB Image Steganography 🤫")
+st.title("Finn Mcmissile- LSB Image stegonographer ")
+st.subheader("The devil is in the details")
 
 # Session state initialization
 if 'decode_file' not in st.session_state:
