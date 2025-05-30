@@ -5,7 +5,7 @@ import time
 
 # Use wide layout for full-width columns
 st.set_page_config(page_title=" Finn Mcmissile- LSB Image stegonographer ", layout="wide")
- st.subheader("The devil is in the details")
+st.subheader("The devil is in the details")
 # Inject CSS
 st.markdown("""
 <style>
